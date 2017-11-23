@@ -1,1 +1,68 @@
-/* You can add global styles to this file, and also import other style files */
+body {
+  direction: rtl;
+}
+.container {
+  max-width: 1170px;
+}
+
+/* flex grid */
+.gutters {
+  margin-left: -1rem;
+  margin-right: -1rem;
+}
+.col {
+  padding: 0 1rem 1rem;
+}
+/* colors */
+.bg-header {
+  background-color: #f4edda;
+}
+.bg-gray23 {
+  background-color: #3b3b3b;
+}
+.bg-gray47 {
+  background-color: #2f2f2f;
+}
+
+.gray61 {
+  color: #9c9c9c;
+}
+
+.indian-red {
+  color: #e17b7a;
+}
+
+/* Media Queries */
+@media screen and (min-width: 30em) {
+  .gutters-ns {
+    margin-left: -1rem;
+    margin-right: -1rem;
+  }
+  .col-ns {
+    padding: 0 1rem 1rem;
+  }
+
+}
+
+@media screen and (min-width: 30em) and (max-width:60em) {
+  .gutters-m {
+    margin-left: -1rem;
+    margin-right: -1rem;
+  }
+  .col-m {
+    padding: 0 1rem 1rem;
+  }
+
+}
+
+@media screen and (min-width: 60em) {
+  .gutters-l {
+    margin-left: -1rem;
+    margin-right: -1rem;
+  }
+  .col-l {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+}

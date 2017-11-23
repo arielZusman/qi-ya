@@ -1,0 +1,15 @@
+.menu_hidden {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 500ms;
+}
+
+.menu_visible {
+  max-height: 300px;
+}
+
+@media screen and (min-width:60em) {
+  .menu_hidden {
+    max-height: none;
+  }
+}

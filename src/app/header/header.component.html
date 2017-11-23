@@ -1,0 +1,15 @@
+<header class="bg-header">
+  <div class="mw8 center flex-l flex-row-l">
+    <h1 class="flex items-center justify-between ma0 pa3 mw4-l">
+      <img src="assets/img/logo.png" alt="">
+      <i class="fa fa-bars dn-l" aria-hidden="true" (click)="menuVisible = !menuVisible"></i>
+    </h1>
+    <nav class="w-80 center w-100-l flex items-center">
+      <ul class="menu_hidden list flex flex-column tr pa0 flex-row-l justify-around-l w-100" [class.menu_visible]="menuVisible">
+        <li *ngFor="let menuItem of menuItems" class="lh-copy pv2 bb b--light-gray">
+          <a class="no-underline dark-gray" href="{{menuItem.href}}">{{menuItem.title}}</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>
